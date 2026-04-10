@@ -3,7 +3,7 @@ import '../assets/css/index.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(window.location.origin),
+  metadataBase: new URL(window ? window.location.origin : ''),
   title: {
     default: 'Next Starter',
     template: '%s | Next Starter',
