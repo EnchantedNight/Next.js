@@ -4,7 +4,8 @@ import { Providers } from './providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.VERCEL_PROJECT_PRODUCTION_URL || 'https://vercel.com',
+    `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` ||
+      'https://vercel.com',
   ),
   title: {
     default: 'Next Starter',
