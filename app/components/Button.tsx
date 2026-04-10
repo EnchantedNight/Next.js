@@ -1,5 +1,3 @@
-'use server';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -7,6 +5,7 @@ type Props = {
   url: string;
   imageSize: number;
   imageSrc: string;
+  imageAlt: string;
   text: string;
   variant: 'light' | 'dark';
 };
@@ -15,6 +14,7 @@ export default async ({
   url,
   imageSize,
   imageSrc,
+  imageAlt,
   text,
   variant,
 }: Props) => {
@@ -31,7 +31,7 @@ export default async ({
     >
       <Image
         src={imageSrc}
-        alt="github"
+        alt={imageAlt}
         width={imageSize}
         height={imageSize}
         className="m-0 mr-3"

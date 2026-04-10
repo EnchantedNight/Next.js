@@ -1,5 +1,3 @@
-'use server';
-
 import Header from '~/app/components/Header';
 import { githubUrl, vercelUrl } from '~/shared/constants';
 import Button from './components/Button';
@@ -7,7 +5,7 @@ import Button from './components/Button';
 const page = {
   heading:
     'A minimal, production-focused starter for shipping on Vercel.',
-  description: `Start with Pages Router, Tailwind and strict TypeScript. 
+  description: `Start with App Router, Tailwind and strict TypeScript. 
   Tanstack Query, Zustand, ready to use Clerk and Neon Serverless via Prisma. 
   Everything you need to start building SaaS.`,
 };
@@ -31,6 +29,7 @@ export default async () => {
               url={vercelUrl}
               imageSize={16}
               imageSrc="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg"
+              imageAlt="vercel"
               text="Deploy on Vercel"
               variant="dark"
             />
@@ -38,6 +37,7 @@ export default async () => {
               url={githubUrl}
               imageSize={16}
               imageSrc="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg"
+              imageAlt="github"
               text="View on Github"
               variant="light"
             />
