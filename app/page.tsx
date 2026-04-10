@@ -16,7 +16,7 @@ const page = {
 
 export default async () => {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black select-none">
       <div className="mx-auto flex w-full max-w-5xl flex-col px-6 pb-16 pt-6 sm:px-8 sm:pt-8">
         <Header />
 
