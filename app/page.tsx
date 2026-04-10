@@ -1,8 +1,8 @@
 'use server';
 
-import Link from 'next/link';
-import Image from 'next/image';
 import Header from '~/app/components/Header';
+import { githubUrl, vercelUrl } from '~/shared/constants';
+import Button from './components/Button';
 
 const page = {
   heading:
@@ -10,8 +10,6 @@ const page = {
   description: `Start with Pages Router, Tailwind and strict TypeScript. 
   Tanstack Query, Zustand, ready to use Clerk and Neon Serverless via Prisma. 
   Everything you need to start building SaaS.`,
-  vercelUrl: 'https://vercel.com/new',
-  githubUrl: 'https://github.com/EnchantedNight/Next.js',
 };
 
 export default async () => {
@@ -29,30 +27,20 @@ export default async () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href={page.vercelUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition hover:bg-black/90"
-            >
-              <Image
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg"
-                alt="vercel"
-                width={16}
-                height={16}
-                className="m-0 mr-3"
-                loading="eager"
-              />
-              Deploy on Vercel
-            </Link>
-            <Link
-              href={page.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-md border border-black/20 px-4 py-2 text-sm font-medium text-black transition hover:bg-black/5"
-            >
-              View GitHub
-            </Link>
+            <Button
+              url={vercelUrl}
+              imageSize={16}
+              imageSrc="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg"
+              text="Deploy on Vercel"
+              variant="dark"
+            />
+            <Button
+              url={githubUrl}
+              imageSize={16}
+              imageSrc="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg"
+              text="View on Github"
+              variant="light"
+            />
           </div>
         </section>
       </div>

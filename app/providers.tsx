@@ -12,11 +12,7 @@ const clerkPublishableKey =
 
 const queryClient = new QueryClient();
 
-export function Providers({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export function Providers({ children }: { children: ReactNode }) {
   const schema = (
     <QueryClientProvider client={queryClient}>
       {children}
