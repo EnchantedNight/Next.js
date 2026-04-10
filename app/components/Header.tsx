@@ -8,7 +8,7 @@ export default () => {
         href={githubUrl}
         className="text-xs uppercase tracking-[0.2em] text-black/50"
       >
-        Next.js template
+        Next.js starter
       </Link>
     </header>
   );
