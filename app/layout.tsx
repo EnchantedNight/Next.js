@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import "../assets/css/index.css";
-import { Providers } from "./providers";
+import type { Metadata } from 'next';
+import '../assets/css/index.css';
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vercel.com"),
+  metadataBase: new URL('https://vercel.com'),
   title: {
-    default: "Next Starter",
-    template: "%s | Next Starter",
+    default: 'Next Starter',
+    template: '%s | Next Starter',
   },
   description:
-    "Minimal and opinionated Next.js template for shipping on Vercel, includes optional auth and database integrations.",
+    'Minimal and opinionated Next.js template for shipping on Vercel, includes optional auth and database integrations.',
 };
 
 export default function RootLayout({

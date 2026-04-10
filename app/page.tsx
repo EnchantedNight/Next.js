@@ -1,16 +1,17 @@
-"use server";
+'use server';
 
-import Link from "next/link";
-import Image from "next/image";
-import Header from "~/app/components/Header";
+import Link from 'next/link';
+import Image from 'next/image';
+import Header from '~/app/components/Header';
 
 const page = {
-  heading: "A minimal, production-focused starter for shipping on Vercel.",
+  heading:
+    'A minimal, production-focused starter for shipping on Vercel.',
   description: `Start with Pages Router, Tailwind and strict TypeScript. 
   Tanstack Query, Zustand, ready to use Clerk and Neon Serverless via Prisma. 
   Everything you need to start building SaaS.`,
-  vercelUrl: "https://vercel.com/new",
-  githubUrl: "https://github.com/EnchantedNight/Next.js",
+  vercelUrl: 'https://vercel.com/new',
+  githubUrl: 'https://github.com/EnchantedNight/Next.js',
 };
 
 export default async () => {
