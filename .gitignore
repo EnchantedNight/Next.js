@@ -1,0 +1,7 @@
+.vercel/
+node_modules/
+.next/
+lib/prisma/
+.agents/
+.env*
+next-env.d.ts
