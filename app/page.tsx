@@ -9,6 +9,8 @@ const page = {
   description: `Start with Pages Router, Tailwind and strict TypeScript. 
   Tanstack Query, Zustand, ready to use Clerk and Neon Serverless via Prisma. 
   Everything you need to start building SaaS.`,
+  vercelUrl: "https://vercel.com/new",
+  githubUrl: "https://github.com/EnchantedNight/Next.js",
 };
 
 export default async () => {
@@ -27,7 +29,7 @@ export default async () => {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="https://vercel.com/new"
+              href={page.vercelUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition hover:bg-black/90"
@@ -43,7 +45,7 @@ export default async () => {
               Deploy on Vercel
             </Link>
             <Link
-              href="https://github.com"
+              href={page.githubUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center rounded-md border border-black/20 px-4 py-2 text-sm font-medium text-black transition hover:bg-black/5"
