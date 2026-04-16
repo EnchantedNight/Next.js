@@ -1,5 +1,5 @@
-import Header from '~/app/components/Header';
 import { githubUrl, vercelUrl } from '~/shared/constants';
+import Header from '~/app/components/Header';
 import Button from './components/Button';
 
 const page = {
